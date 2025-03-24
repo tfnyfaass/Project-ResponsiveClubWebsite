@@ -64,3 +64,51 @@ header {
     display: none;
 }
 
+.hero {
+    width: 22rem;
+    height: 12.75rem;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.hero h1, .hero p {
+    margin: 0rem;
+}
+
+.hero h1 {
+    color: #124559;
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-family: Manrope;
+    color: #1B263B;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #1B263B;
+    font-weight: 400;
+    border: 1px solid #415A77;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.hero a:hover {
+    background-color: #415A77;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
