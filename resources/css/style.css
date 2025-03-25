@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
     font-family: '';
@@ -6,10 +10,46 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     font-family: "Manrope", sans-serif;
+}
+
+h2 {
+    color: #124559;
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: #1B263B;
+    font-weight: 400;
+    border: 1px solid #415A77;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: #415A77;
+    opacity: 0.8;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+p {
+    font-family: Manrope;
+    color: #1B263B;
+    line-height: 2rem;
 }
 
 .landing {
@@ -89,26 +129,197 @@ header {
     margin-bottom: 1rem;
 }
 
-.hero p {
-    font-family: Manrope;
-    color: #1B263B;
-}
-
-.hero a {
+#hero-btn {
+    position: relative;
     text-decoration: none;
-    color: #1B263B;
+    color: #415A77;
     font-weight: 400;
-    border: 1px solid #415A77;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
     margin-top: 1rem;
+    width: fit-content;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    text-align: left;
+    padding-bottom: 0.5rem;
 }
 
-.hero a:hover {
-    background-color: #415A77;
-    opacity: 0.8;
-    color: #fff;
-    font-weight: 400;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
+#hero-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #1B263B;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+#hero-btn:hover {
+    color: #1B263B;
+}
+
+#hero-btn:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+section {
+    width: 100%;
+    max-width: 100%;
+    height: 70vh;
+    margin-bottom: 10rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    margin: 0 5rem;
+    flex-wrap: wrap;
+}
+
+.about .info, .about-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .info {
+    flex-basis: 20rem;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: #0D1B2A;
+}
+
+.about-logo {
+    width: 20rem;
+    height: 20rem;
+}
+
+.events {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    margin: 0 5rem;
+    flex-wrap: wrap;
+    gap: 10rem;
+    margin-bottom: 10rem; 
+}
+
+.event-img {
+    width: 30rem;
+    height: 38rem;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.event-info {
+    width: 8rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: #0D1B2A;
+}
+
+.event-info ul {
+    list-style: none;
+    padding: 0;
+    line-height: 3rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem; 
+}
+
+.projects-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}    
+
+.projects .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: space-between;
+    width: 100%;
+    height: 27rem;
+    img {
+        width: 90%;
+        height: 60%;
+        object-fit: cover;
+    }
+}
+
+.projects .btn {
+    width: auto; 
+    align-self: center;
+    text-align: center;
+    white-space: nowrap; 
+    padding: 0.5rem 1rem; 
+    margin-top: 4rem; 
+}
+
+.projects .btn:hover {
+    opacity: 1;
+}
+
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 6rem;
+    margin: 0 5rem;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.members-info {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #0D1B2A;
+}
+
+.members-img {
+    width: 30rem;
+    height: 38rem;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .about, .events, .members {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .about .info, .about-logo, .event-img, .event-info, .members-info, .members-img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .about .info {
+        flex-basis: auto;
+    }
 }
