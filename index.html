@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Club Website</title>
     <link href="resources/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
   </head>
   <body>
     <section class="landing">
-        <header>
-            <div class=logo>
-              <a href="index.html"><img src="resources/images/forma.png"></a>
-            </div>
-            <nav class=desktop>
-              <ul>
-                  <li><a href=>events</a></li>
-                  <li><a href=>about</a></li>
-                  <li><a href=>contact us</a></li>
-              </ul>
-            </nav>
-            <nav class=mobile>
-              <ul>
-                  <li><a href=>Events</a></li>
-                  <li><a href=>About</a></li>
-                  <li><a href=>Contact us</a></li>
-              </ul>
-            </nav>
-        </header>
-        <section class="hero">
-          <h1>Where Design Meets Innovation</h1>
-          <p>Join our community of passionate interior designers and architects to explore creativity, collaborate, and bring visionary ideas to life.</p>
-          <a href="#events" id="hero-btn">Explore Events</a>
-        </section>
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="resources/images/forma.png" alt="Forma Logo"></a>
+        </div>
+        <nav class="desktop">
+          <ul>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="mobile">
+          <ul>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <h1>Where Design Meets Innovation</h1>
+        <p>Join our community of passionate interior designers and architects to explore creativity, collaborate, and bring visionary ideas to life.</p>
+        <a href="#events" id="hero-btn">Explore Events</a>
+      </section>
     </section>
     <section class="about">
-      <dev class="info">
+      <div class="info">
         <h2>About Forma</h2>
         <p>Forma is a creative collective for architects and interior designers who believe in the power of aesthetics and functionality. Whether you're a student, professional, or enthusiast, we provide a space to discuss, design, and transform spaces.</p>
-      </dev>
+      </div>
       <div class="about-logo">
-        <img src="resources\images\forma.png" alt="forma logo">
+        <img src="resources/images/forma.png" alt="Forma Logo">
       </div>
     </section>
     <section class="events">
       <div class="event-img">
-        <img src="resources\images\event.jpg">
+        <img src="resources/images/event.jpg" alt="Event Image">
       </div>
-      <dev class="event-info">
+      <div class="event-info">
         <h2>Upcoming Events</h2>
         <ul>
           <li><strong>Architectural Sketching Workshop</strong> – May 20, 2025</li>
@@ -55,12 +62,12 @@
           <li><strong>Forma Design Challenge</strong> – July 12, 2025</li>
         </ul>
         <a href="#events" class="btn">View All Events</a>
-      </dev>
+      </div>
     </section>
     <section class="projects">
       <div class="projects-info">
         <h2>Featured Projects</h2>
-        <p>Discover innovative designs and concepts from Forma members. </p>
+        <p>Discover innovative designs and concepts from Forma members.</p>
       </div>
       <div class="gallery">
         <a href="#" class="project-item project1">
@@ -77,12 +84,12 @@
     </section>
     <section class="members">
       <div class="members-info">
-        <h2>Become a forma Member</h2>
-        <p>Connect with a network of creatives, gain exclusive access to industry insights, and showcase your work. Joining is free and open to all design enthusiasts</p>
-      <a href="#join" class="btn">Join Now</a>
+        <h2>Become a Forma Member</h2>
+        <p>Connect with a network of creatives, gain exclusive access to industry insights, and showcase your work. Joining is free and open to all design enthusiasts.</p>
+        <a href="#join" class="btn">Join Now</a>
       </div>
       <div class="members-img">
-        <img src="resources\images\members.jpg">
+        <img src="resources/images/members.jpg" alt="Members Image">
       </div>
     </section>
     <section class="contact-us">
@@ -105,17 +112,19 @@
             </form>
           </div>
           <div class="social-icons">
-            <a href="#"><img src="resources\images\icon-instagram.svg" alt="Instagram" class="icon"></a>
-            <a href="#"><img src="resources\images\icon-linkedin.svg" alt="LinkedIn" class="icon"></a>
-            <a href="#"><img src="resources\images\icon-facebook.svg" alt="Facebook" class="icon"></a>
-          </div> 
+            <a href="#"><img src="resources/images/icon-instagram.svg" alt="Instagram" class="icon"></a>
+            <a href="#"><img src="resources/images/icon-linkedin.svg" alt="LinkedIn" class="icon"></a>
+            <a href="#"><img src="resources/images/icon-facebook.svg" alt="Facebook" class="icon"></a>
+          </div>
         </div>
       </div>
       <div class="contact-img">
-        <img src="resources\images\contact.jpg">
+        <img src="resources/images/contact.jpg" alt="Contact Image">
       </div>
+      <footer>
+        <p>&copy; 2025 Forma Club. All rights reserved.</p>
+      </footer>
     </section>
-    <footer>
-    </footer>
+    <script src="resources/js/mobile-menu.js"></script>
   </body>
 </html>
