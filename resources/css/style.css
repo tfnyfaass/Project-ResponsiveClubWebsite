@@ -377,30 +377,42 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 1rem;
 }
 
 .search-form {
     width: 100%;
+    display: flex;
     button {
         display: inline-block; 
+        width: 27%;
         padding: 0.2rem 0.3rem;
-        border-radius: 0.2rem;
+        border-radius: 0 0.2rem 0.2rem 0;
         background-color: #1B263B;
         color: #fff;
         border: none;
         cursor: pointer; 
         text-align: center; 
+        white-space: nowrap;
+        box-sizing: border-box;
     }
 
     input {
+        flex: 1;
+        padding: 0.5rem;
         background-color: #124559;
         opacity: 0.12;
-        color: #1B263B;
+        box-shadow: none;
+        border: none;
+        border-radius: 0.2rem 0 0 0.2rem;
+        width: 100%;
     }
 }
 
 .search-form input::placeholder {
     color: #1B263B;
+    opacity: 1;
 }
 
 
