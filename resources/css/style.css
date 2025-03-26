@@ -256,18 +256,62 @@ section {
     margin-bottom: 1rem;
 }    
 
-.projects .gallery {
+.gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: space-between;
     gap: 2rem;
-    width: 100%;
+    width: 100%;    
+    position: relative;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
     height: 27rem;
+    cursor: pointer;
     img {
         width: 100%;
-        height: 60%;
+        height: 100%;
         object-fit: cover;
+        transition: opacity 0.3s ease;
     }
+}
+
+.project-item:hover img {
+    opacity: 0.5;
+}
+
+.project-item::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #124559;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project1::before {
+    content: 'Unique outdoor space design';
+}
+
+.project2::before {
+    content: 'Minimalist architectural design';
+}
+
+.project3::before {
+    content: 'Clean modern living room design';
+}
+
+.project-item:hover::before {
+    opacity: 1; 
+    z-index: 5;
 }
 
 .projects .btn {
