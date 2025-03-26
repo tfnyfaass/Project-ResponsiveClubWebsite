@@ -164,7 +164,7 @@ header {
 section {
     width: 100%;
     max-width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 
 .about {
@@ -253,17 +253,18 @@ section {
 .projects-info {
     width: 100%;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }    
 
 .projects .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: space-between;
+    gap: 2rem;
     width: 100%;
     height: 27rem;
     img {
-        width: 90%;
+        width: 100%;
         height: 60%;
         object-fit: cover;
     }
@@ -275,7 +276,7 @@ section {
     text-align: center;
     white-space: nowrap; 
     padding: 0.5rem 1rem; 
-    margin-top: 4rem; 
+    margin-top: 5rem; 
 }
 
 .projects .btn:hover {
