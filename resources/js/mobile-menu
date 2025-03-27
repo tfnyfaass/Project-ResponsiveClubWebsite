@@ -1,0 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile");
+
+    hamburger.addEventListener("click", () => {
+        console.log("Hamburger clicked!"); 
+        mobileMenu.classList.toggle("active");
+    });
+});
