@@ -434,7 +434,7 @@ section {
 
 .get-in-touch {
     width: 50%;
-    padding-left: 19rem;
+    padding-left: 12rem;
 }
 
 .email {
@@ -467,7 +467,7 @@ section {
     align-items: flex-start;
     width: 50%;
     padding: 1rem;
-    padding-right: 19rem;
+    padding-right: 10rem;
 }
 
 .search-form {
