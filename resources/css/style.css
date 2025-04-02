@@ -337,14 +337,14 @@ section {
 .project-item::before {
     content: '';
     position: absolute;
-    top: 45%;
+    top: 48%;
     left: 50%;
     transform: translateX(-50%);
     color: #124559;
     text-align: center;
     font-family: 'Manrope', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 400;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
