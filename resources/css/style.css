@@ -432,11 +432,11 @@ section {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-items: flex-start;
+    justify-items: center;
     align-items: flex-start;
-    gap: 50rem;
+    gap: 20rem;
     margin: 0 auto;
-    padding: 2rem 12rem;
+    padding: 2rem 6rem;
 }
 
 .email {
