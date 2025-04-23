@@ -416,7 +416,7 @@ section {
     }
 }
 
-.contact-us {
+.contact {
     width: 100%;
     height: 100vh;
     margin-top: 10rem;
@@ -429,17 +429,14 @@ section {
 
 .contact-info {
     margin-top: 5rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    gap: 20rem;
+    justify-items: flex-start;
+    align-items: flex-start;
+    gap: 50rem;
     margin: 0 auto;
-    padding: 2rem 6rem;
-}
-
-.get-in-touch {
-    width: 50%;
+    padding: 2rem 12rem;
 }
 
 .email {
@@ -450,8 +447,20 @@ section {
     gap: 0.5rem;
 }
 
-.email p, .email img {
+.email a{
     margin: 0;
+    color: #415A77;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    cursor: pointer; 
 }
 
 .contact-img {
@@ -471,7 +480,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
 }
 
 .search-form {
@@ -513,17 +521,6 @@ section {
     margin: 0;
 }
 
-.social-icons {
-    margin-top: 1rem;
-}
-
-.icon {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-    cursor: pointer; 
-}
-
 footer {
     width: 100%;
     padding-left: 5rem;
@@ -553,11 +550,17 @@ footer {
     .event-img {
         width: 25rem; 
     }
+
+    .contact-info{
+        width: 100%;
+        gap: 5rem;
+        align-items: flex-start;
+    }
 }
 
 
 @media (max-width: 768px) {
-    .about, .events, .members {
+    .about, .events, .members{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -566,7 +569,7 @@ footer {
         padding: 4rem 2rem;
         margin: 0;
     }
-    
+
     .about .info {
         max-width: 80%;
         margin: 0 auto;
@@ -583,5 +586,13 @@ footer {
 
     .hamburger {
         display: flex; 
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .contact-info{
+        width: 100%;
+        gap: 5rem;
+        align-items: flex-start;
     }
 }
